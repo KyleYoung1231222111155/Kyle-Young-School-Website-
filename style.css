@@ -6,23 +6,18 @@
    padding: 7px; 
 }
 
- h1 {
+ h1 , h2{
 	font-size: 300%;
 	padding: 8px;
  }
- 
-  h2 {
-	font-size: 300%;
-	padding: 8px;
- }
- 
-  .answer{
+  
+ .answer{
 	font-size: 200%;
 	padding: 8px;
 	display: inblock;
  }
  
-   p{
+ p{
 	font-size: 100%;
 	padding: 8px;
 	display: inblock;
@@ -73,7 +68,7 @@
   background-color: #0000A0;
 } 
 
-.english{
+.english , .englishpage{
 	background-color: #32CD32;
 	color: #FAFAFA;
 	height: 380px;
@@ -84,19 +79,7 @@
 	text-align: left;
 }   
 
- .englishpage{
-	background-color: #32CD32;
-	color: #FAFAFA;
-	height: 200px;
-	width: 51%;
-	font-family: 'Sniglet', cursive;
-	float: right;
-	display: inline-block ;
-	text-align: left;
-}  
-
-
-.english:hover {
+.english , .englishpage:hover {
   background-color: #228B22;
 } 
 

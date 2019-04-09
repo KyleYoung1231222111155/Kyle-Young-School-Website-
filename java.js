@@ -13,6 +13,7 @@ Question = function(input1,input2){
 
 var qList = [] 
 qList[0] = new Question("What is the capital of France?","paris");
+qList[1] = new Question("2+2=","4");
 
 
 function mymath(){
