@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+
+#wrapper{
+   max-width: 1040px;
+   margin: 0 auto;
+   padding: 0; 
+}
+
+header{
+	background-color: #EE3710;
+	color: #FAFAFA;
+	height: 340px;
+	width: 49%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block ;
+	float: left;
+}  
+
+ h1 {
+	text-align: left;
+	font-size: 200%;
+	padding:2px;
+ }
+ 
+ h2 {
+	text-align: left;
+	font-size: 200%;
+	padding: 15px 15px;
+ }
+ 
+ aside{
+	background-color: #0000FF;
+	color: #FAFAFA;
+	height: 200px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	float: right;
+	display: inline-block ;
+}  
+.aside2{
+	background-color: #32CD32;
+	color: #FAFAFA;
+	height: 380px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	float: right;
+	display: inline-block ;
+}    
+
+section{
+	background-color: #ADFF2F;
+	color: #FAFAFA;
+	height: 340px;
+	width: 49%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block ;
+	float: left;
+}
+  
+.stopbottom{
+	background-color: #FFA500;
+	color: #FAFAFA;
+	height: 100px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block ;
+	float: left;
+} 
