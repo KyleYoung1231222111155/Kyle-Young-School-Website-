@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Its Time To Study </title>
+	<script language="javascript" type="text/javascript" src="java.js"> </script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	
+	$(document).ready(function(){
+		$(".button").click(function(){
+		$("div").toggleClass("black");
+		
+		});
+	});
+</script>
+	
+</head>
+
+<body>
+	
+	<div id="wrapper">
+
+		<header> 
+			<a href="index.html" class="study">
+				<h1>Study</h1>
+			</a>
+		</header>
+		
+		<section>
+			<a class="stop" id="stop">
+				<h3>Have A Good Time</h3>
+			</a>
+		</section>
+		
+		<aside>
+			<a class="math" href="math.html"> 
+				<h1>Math</h1>
+			</a>
+		</aside>
+		
+
+		<aside>
+				<a href="english.html" class="english"> 
+					<h1>English</h1> 
+				</a>
+		</aside>
+		
+		<section>
+			<a class="health" href="health.html">
+					<h1>Health</h1>
+			</a> 
+		</section>
+	
+		<footer><button class="button" ><p>Black And White</p></button></footer>
+
+	</div>
+
+</body>
