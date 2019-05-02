@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+
+#wrapper{
+   max-width: 1040px;
+   margin: 0 auto;
+   padding: 7px; 
+}
+
+ h1 {
+	font-size: 300%;
+	padding: 8px;
+ }
+ 
+ body {
+	 background-color: black;
+ }
+ 
+ a {
+	text-decoration: none;
+    display: block; 
+	color: #FAFAFA;
+ }
+ 
+ .math{
+	background-color: #0000FF;
+	color: #FAFAFA;
+	height: 200px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	float: right;
+	display: inline-block ;
+	text-align: left;
+}  
+
+.math:hover {
+  background-color: #0000A0;
+} 
+
+.english{
+	background-color: #32CD32;
+	color: #FAFAFA;
+	height: 380px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	float: right;
+	display: inline-block ;
+	text-align: left;
+}   
+
+.english:hover {
+  background-color: #228B22;
+} 
+
+.health{
+	background-color: #ADD8E6;
+	color: #FAFAFA;
+	height: 340px;
+	width: 49%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block ;
+	float: left;
+	text-align: right;
+}
+
+.health:hover {
+  background-color: #00FFFF;
+}
+  
+.stop{
+	background-color: #FFA500;
+	color: #FAFAFA;
+	height: 100px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block ;
+	text-align: left;
+	float: left;
+} 
+
+.stop:hover {
+  background-color: #FF8C00;
+}
+
+.study {
+	background-color: #EE3710;
+	color: #FAFAFA;
+	height: 340px;
+	width: 49%;
+	font-family: 'Sniglet', cursive;
+	text-align: right;
+	display: inline-block ;
+	float: left;
+}  
+
+.study:hover {
+  background-color: #B22222;
+}
+
+button{
+	border: none;
+}
