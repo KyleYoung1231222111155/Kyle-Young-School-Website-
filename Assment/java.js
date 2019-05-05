@@ -13,7 +13,6 @@ Question = function(input1,input2){
 		} else{
 			alert("wrong")
 		}
-		
 	}
 }
 
