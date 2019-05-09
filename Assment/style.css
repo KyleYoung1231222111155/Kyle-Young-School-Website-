@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Sniglet');
 
 #wrapper{
-   max-width: 1040px;
-   margin: 0 auto;
+   max-width: 90%;
+   margin: 10px auto;
    padding: 7px; 
 }
 
@@ -36,11 +36,10 @@
  }
  
  p{
-	font-size: 100%;
-	padding: 8px;
+	font-size: 260%;
+	padding: 20px;
 	display: inblock;
  }
-
  
  
  body , .black{
@@ -151,8 +150,7 @@
 .study {
 	background-color: #EE3710;
 	color: #FAFAFA;
-	min-height: 377px;
-	max-height: 390px;
+	height: 378px;
 	width: 49%;
 	font-family: 'Sniglet', cursive;
 	text-align: right;
@@ -168,8 +166,7 @@
 	background-color: #ADD8E6;
 	color: #FAFAFA;
 	min-height: 340px;
-	width: 96%;
-	padding: 20px;
+	width: 100%;
 	font-family: 'Sniglet', cursive;
 	display: inline-block;
 } 

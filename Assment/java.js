@@ -17,14 +17,15 @@ Question = function(input1,input2){
 }
 
 var qList = [] 
-//qList[0] = new Question("2+2=","4");               //this is the Question bank
-//console.log("qlist2running");
-//qList[1] = new Question();
 
 var i = 0;
+
 while(i<10){
-	qList[i] = new Question("2+" + i + "=",2+i);
-	console.log(qList[i])
+	//qList[i] = new Question("2+" + i + "=",2+i);
+	//console.log(qList[i])
+	qList[0] = new Question("Round The Folling Answers to the Stated number of Decimal places 4.763(1dp)","5");               //this is the Question bank
+	console.log("qlist2running");
+	qList[1] = new Question("When a grizzly bear hibernates, its heart rate drops to 10 beats per minute, which is 20%, percent of its normal value.    What is a grizzly bear's normal heart rate when not hibernating?","50");
 	i++;
 }
 var j = 0
@@ -39,4 +40,7 @@ function mark() {
 function mymath(n){
 	console.log("mymathrunning")
 	document.getElementById("askmath").innerHTML = qList[n].qtext
+	if (n==0){
+		document.getElementById("askmath").onclick = "";
+	}
 }
