@@ -33,14 +33,14 @@
 		</section>
 		
 		<aside>
-			<a class="math" onclick="nextmathquestion()" id="nextmathquestion">
+			<a class="math" onclick="mymath()" id="nextmathquestion">
 				<h4>Next Math Questions</h4>
 			</a>
 		</aside>
 
 		<section class="questions" id="qmath">
 			<p id ="askmath" onclick ="mymath(0)">Click To Start</p>
-			<input type="text" id="textbox">
+			<input type="text" onfocus="this.value=''" id="textbox">
 			<input type="button" value="done" onclick="mark()">
 		</section>
 		
