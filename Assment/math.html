@@ -3,48 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<script language="javascript" type="text/javascript" src="java.js"> </script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">								<!--This is the links to everything like the style sheet -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Its Time To Study </title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-	$(document).ready(function(){
-		$(".button").click(function(){
-		$("h1 , h2 , p").toggleClass("black");
-		
-		});
-	});
-</script>
 </head>
 
 <body>
 	<div id="wrapper">
 
 		<header>
-			<a class="study" href="index.html">
+			<a class="study" href="index.html">							<!-- this like the home button on websites, this will send you back to the home page, and it is the block that says study -->
 				<h1>Study</h1>
 			</a>
 		</header>
 		
 		<section>
-			<a class="stop" id="stop">
-				<h3>Stop Asking Questions</h3>
+			<a class="stop" id="stop" >									<!-- right now this stops asking questions but it dose not work and I may change it -->
+				<h3 id ="hint" onclick="hint">Hint</h3>
 			</a>
 		</section>
 		
 		<aside>
-			<a class="math" onclick="mymath()" id="nextmathquestion">
+			<a class="math" onclick="mymath()" id="nextmathquestion">          <!-- right now this is the box that say stop asking question but it dose not work right now -->    
 				<h4>Next Math Questions</h4>
 			</a>
 		</aside>
 
 		<section class="questions" id="qmath">
 			<p id ="askmath" onclick ="mymath(0)">Click To Start</p>
-			<input type="text" onfocus="this.value=''" id="textbox">
+			<input type="text" onfocus="this.value=''" id="textbox">        <!--this is where you click to start asking questions-->
 			<input type="button" value="done" onclick="mark()">
 		</section>
 		
-		<!--<footer><a class="button" ><p>Black And White</p></a></footer>-->
+		<!--<footer><a class="button" ><p>Black And White</p></a></footer>-->		<!-- this is the foot I made not work because I was working on some over thens -->
 		
 	</div>
 </body>
