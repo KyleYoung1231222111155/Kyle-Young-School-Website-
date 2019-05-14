@@ -40,6 +40,11 @@ while(i<10){
 	qList[4] = new Question("What is 25% of 908?","227"); 
 	qList[5] = new Question("15+(52)=","-37"); 
 	qList[6] = new Question("77-(62)=","139"); 
+	qList[7] = new Question("Work it Out √36","6");
+	qList[8] = new Question("Work It out √225","15");
+	qList[9] = new Question("The number of people on a plane was 280. If 40% of the people got off. How many were left?","112");
+	qList[10] = new Question("√225","15");
+	qList[11] = new Question("√225","15");
 	i++;
 }
 var j = 0
@@ -59,7 +64,6 @@ function mymath(n){
 	}
 }
 
-function hint(input3){
-	console.log("hint running");		
-	document.getElementById("hint").innerHTML = qList[n].qtext
+function givehint(){
+	
 }
