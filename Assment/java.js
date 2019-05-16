@@ -13,6 +13,7 @@ Question = function(input1,input2){
 
 	this.qtext = input1;
 	var answer = input2;
+	
 	this.congrats = "Well done! It is " + answer + "!";                        //this is how it replays to how if you get it right or wrong
 	console.log("runningask")
 	this.check = function(givenAnswer){
@@ -43,8 +44,8 @@ while(i<10){
 	qList[7] = new Question("Work it Out √36","6");
 	qList[8] = new Question("Work It out √225","15");
 	qList[9] = new Question("The number of people on a plane was 280. If 40% of the people got off. How many were left?","112");
-	qList[10] = new Question("√225","15");
-	qList[11] = new Question("√225","15");
+	qList[10] = new Question("√225",15);
+	qList[11] = new Question("√225",15);
 	i++;
 }
 var j = 0
