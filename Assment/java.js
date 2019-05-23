@@ -20,10 +20,11 @@ console.log("hello")
 	//	});
 	//});
 
-Question = function(input1,input2){
+Question = function(input1,input2,input3){
 
 	this.qtext = input1;
 	var answer = input2;
+	this.hint = input3;
 	this.congrats = "Well done! It is " + answer + "!";                        //this is how it replays to how if you get it right or wrong
 	console.log("runningask")
 	this.check = function(givenAnswer){
@@ -46,8 +47,8 @@ while(i<10){
 	//console.log(qList[i])
 	qList[0] = new Question("Round The Folling Answers to the Stated number of Decimal places 4.763(1dp)","5","round up");               //this is the Question bank
 	console.log("qlist2running");
-	qList[1] = new Question("When a grizzly bear hibernates, its heart rate drops to 10 beats per minute, which is 20%, percent of its normal value.    What is a grizzly bear's normal heart rate when not hibernating?","50","there 60 beats per minute");
-	qList[2] = new Question("6 box can hold 36 books what is the ratio book per box","36:6"); 
+	qList[1] = new Question("When a grizzly bear hibernates, its heart rate drops to 10 beats per minute, which is 20%, percent of its normal value. What is a grizzly bear's normal heart rate when not hibernating?","50","there 60 beats per minute");
+	qList[2] = new Question("6 box can hold 36 books what is the ratio book per box","36:6","Number:Number"); 
 	qList[3] = new Question("6 box can hold 36 books what is the rate book per box","6"); 
 	qList[4] = new Question("What is 25% of 908?","227"); 
 	qList[5] = new Question("15+(52)=","-37"); 
@@ -83,5 +84,6 @@ function mymath(n){
 }
 
 function givehint(){
-	
+	document.getElementById("hint").innerHTML = "You Hint is " + qList[j].hint
+	console.log("hintisrunning")
 }

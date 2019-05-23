@@ -14,7 +14,7 @@
  
   h3{
 	font-size: 300%;
-	padding: 10px;
+	padding: 5px;
 	color: white;
  }
  
@@ -36,8 +36,8 @@
  }
  
  p{
-	font-size: 260%;
-	padding: 20px;
+	font-size: 150%;
+	padding: 10px;
 	display: inblock;
  }
  
@@ -169,11 +169,27 @@
   background-color: #B22222;
 }
 
+.studyask {
+	background-color: #EE3710;
+	color: #FAFAFA;
+	height: 360px;
+	width: 49%;
+	font-family: 'Sniglet', cursive;
+	text-align: right;
+	display: inline-block ;
+	float: left;
+}  
+
+.studyask:hover {
+  background-color: #B22222;
+}
+
 .questions{
 	background-color: #ADD8E6;
 	color: #FAFAFA;
-	min-height: 340px;
-	width: 50%;
+	min-height: 356px;
+	padding:4px;
+	width: 48.3%;
 	font-family: 'Sniglet', cursive;
 	display: inline-block;
 } 
@@ -182,7 +198,7 @@
 	background-color: #CA0A70;
 	color: #FAFAFA;
 	min-height: 340px;
-	width: 50%;
+	width: 51%;
 	font-family: 'Sniglet', cursive;
 	display: inline-block;
 	float: right;
