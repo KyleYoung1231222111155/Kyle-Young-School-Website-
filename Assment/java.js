@@ -1,5 +1,16 @@
 //src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
 
+
+
+var ras = 0													//ras = right answers this Variables will go up every time you get a answer is right
+
+var was = 0													//was = wrong answers this Variables will go up every time you get a answer is wrong
+
+var qList = [] 
+
+var i = 0;
+
+
 console.log("hello")
 
 	//$(document).ready(function(){
@@ -29,14 +40,6 @@ Question = function(input1,input2){
 	}
 }
 
-
-var ras = 0													//ras = right answers this Variables will go up every time you get a answer is right
-
-var was = 0													//was = wrong answers this Variables will go up every time you get a answer is wrong
-
-var qList = [] 
-
-var i = 0;
 
 while(i<10){
 	//qList[i] = new Question("2+" + i + "=",2+i);
@@ -70,8 +73,11 @@ function mark() {
 
 function mymath(n){
 	console.log("mymathrunning")
+
 	document.getElementById("askmath").innerHTML = qList[n].qtext							//this look and reads the fist item in the array list in the question bank and puts it in the html
-	if (n==0){
+	document.getElementById("wronganswers").innerHTML = "Wrong Answers " + was
+	document.getElementById("rightanswers").innerHTML = "Right Answers " + ras
+		if (n==0){
 		document.getElementById("askmath").onclick = "";
 	}
 }

@@ -41,6 +41,13 @@
 	display: inblock;
  }
  
+  p2{
+	font-size: 250%;
+	padding: 2px;
+	display: inblock;
+	float: right;
+ }
+ 
  
  body , .black{
 	 background-color: black;
@@ -166,10 +173,24 @@
 	background-color: #ADD8E6;
 	color: #FAFAFA;
 	min-height: 340px;
-	width: 100%;
+	width: 50%;
 	font-family: 'Sniglet', cursive;
 	display: inline-block;
 } 
+
+.rightwrong{
+	background-color: #CA0A70;
+	color: #FAFAFA;
+	min-height: 340px;
+	width: 50%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block;
+	float: right;
+} 
+
+input{
+	padding: 5px;
+}
 
 button{
 	border: none;

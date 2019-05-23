@@ -19,7 +19,7 @@
 		
 		<section>
 			<a class="stop" id="stop" >									<!-- right now this stops asking questions but it dose not work and I may change it -->
-				<h3 id ="hint" onclick="givehint(0)">Hint</h3>
+				<h3 id ="hint" onclick="givehint()">Hint</h3>
 			</a>
 		</section>
 		
@@ -28,13 +28,21 @@
 				<h4>Next Math Questions</h4>
 			</a>
 		</aside>
-
+		
+		<section class="rightwrong">
+			<h3 id ="rightanswers">Right Answers</h3>
+			<h3 id ="wronganswers">Wrong Answers</h3>
+		</section>
+		
 		<section class="questions" id="qmath">
+
 			<p id ="askmath" onclick ="mymath(0)">Click To Start</p>
+
 			<input type="text" onfocus="this.value=''" id="textbox">        <!--this is where you click to start asking questions-->
 			<input type="button" value="done" onclick="mark()">
 		</section>
 		
+
 		<!--<footer><a class="button" ><p>Black And White</p></a></footer>-->		<!-- this is the foot I made not work because I was working on some over thens -->
 		
 	</div>
