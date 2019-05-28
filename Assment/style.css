@@ -194,10 +194,19 @@
 	display: inline-block;
 } 
 
+.seerightwrong{
+	background-color: #000000;
+	color: #FAFAFA;
+	width: 100%;
+	padding: 10px;
+	font-family: 'Sniglet', cursive;
+	display: inline-block;
+}
+
 .rightwrong{
 	background-color: #CA0A70;
 	color: #FAFAFA;
-	min-height: 340px;
+	min-height: 350px;
 	width: 51%;
 	font-family: 'Sniglet', cursive;
 	display: inline-block;

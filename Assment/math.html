@@ -39,9 +39,25 @@
 			<h3>Questions</h3>
 			<p id ="askmath" onclick ="mymath(0)">Click To Start</p>
 			<input type="text" onfocus="this.value=''" id="textbox">        <!--this is where you click to start asking questions-->
-			<input type="button" value="done" onclick="mark()">
+			<input type="button" value="done" id="enter" onclick="mark()">
 		</section>
 		
+<script>
+var input = document.getElementById("enter");								<!--this make enter key  work on the keybord but it is not working right now-->
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("enter").click();
+  }
+});
+</script>
+		
+		<!-- <section class="Seerightwrong">
+		<tr>
+			<th><p id = "question">Questions</p></th>
+			<th><p id = "answers">Answers</p></th>
+		</tr>
+		</section> -->
 
 		<!--<footer><a class="button" ><p>Black And White</p></a></footer>-->		<!-- this is the foot I made not work because I was working on some over thens -->
 		
