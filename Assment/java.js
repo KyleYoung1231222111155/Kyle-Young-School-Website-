@@ -6,16 +6,7 @@ var ras = 0													//ras = right answers, this Variables will go up every t
 
 var was = 0													//was = wrong answers, this Variables will go up every time you get a answer is wrong
 
-var qList = ["Whats this "] 
 
-var qlist2 = [" + "]
-
-var answers = Math.random() + getRandomInt(100)
-
-var i = 0;
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
 
 console.log("hello")
 
@@ -70,31 +61,60 @@ Question = function(input1,input2,input3){
 //}
 
 
-var j = 0
-function mark() {
-	var str =	document.getElementById("textbox").value;
-	console.log(document.getElementById("textbox").value);	
-	str = str.trim();	
-	console.log(str);														//this checks the value of the text and reads it and looks at the answer and see if it is right 
-	console.log("mark running");
-	console.log(str)
-	str = str.toLowerCase();
-	console.log(str)
-	answers.check(str);
-	j++;
-	mymath(j);
-}
+//var j = 0
+//function mark() {
+//	var str =	document.getElementById("textbox").value;
+//	console.log(document.getElementById("textbox").value);	
+//	str = str.trim();	
+//	console.log(str);														//this checks the value of the text and reads it and looks at the answer and see if it is right 
+//	console.log("mark running");
+//	console.log(str)
+//	str = str.toLowerCase();
+//	console.log(str)
+//	answers.check(str);
+//	j++;
+//mymath(j);
+//}
 
-function mymath(n){
-	console.log("mymathrunning")
-	document.getElementById("askmath").innerHTML = qList[0] + Math.random() + qlist2[0] + getRandomInt(100);	
-	//document.getElementById("hint").innerHTML = "Your Hint is " + qList[n].hint
-	console.log("hintisrunning")																										//this look and reads the fist item in the array list in the question bank and puts it in the html
-	document.getElementById("wronganswers").innerHTML = "Wrong Answers " + was
-	document.getElementById("rightanswers").innerHTML = "Right Answers " + ras
-		if (n==0){
-		document.getElementById("askmath").onclick = "";
+function mymath(){
+	var pickquestion = Math.floor((Math.random() * 4));
+	var randomnumber1 = Math.floor((Math.random() * 100) + 1);
+	var randomnumber2 = Math.floor((Math.random() * 100) + 1);
+	console.log(pickquestion)
+	console.log(randomnumber1)
+	console.log(randomnumber2)
+	if(pickquestion < 1){
+		var str =	document.getElementById("textbox").value;
+		console.log(document.getElementById("textbox").value);	
+		str = str.trim();	
+		console.log(str);														//this checks the value of the text and reads it and looks at the answer and see if it is right 
+		console.log("mark running");
+		console.log(str)
+		str = str.toLowerCase();
+		console.log(str)
+		var answer = randomnumber1 + randomnumber2;
+		console.log(answer)
+		var qlistaddpart1 = ["Whats this "]
+		var qlistaddpart2 = [" + "]
+		document.getElementById("askmath").innerHTML = qlistaddpart1 + randomnumber1 + qlistaddpart2 + randomnumber2;
+	} else if (pickquestion < 2) {
+		
+	} else {
+		
 	}
+	
+	
+	
+	
+	//console.log("mymathrunning")
+	//document.getElementById("askmath").innerHTML = qList[0] + Math.random() + qlist2[0] + getRandomInt(100);	
+	//document.getElementById("hint").innerHTML = "Your Hint is " + qList[n].hint
+	//console.log("hintisrunning")																										//this look and reads the fist item in the array list in the question bank and puts it in the html
+	//document.getElementById("wronganswers").innerHTML = "Wrong Answers " + was
+	//document.getElementById("rightanswers").innerHTML = "Right Answers " + ras
+		//if (n==0){
+		//document.getElementById("askmath").onclick = "";
+	//}
 }
 
 //function givehint(){
