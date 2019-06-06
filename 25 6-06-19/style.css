@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+
+#wrapper{
+   max-width: 90%;
+   margin: 10px auto;
+   padding: 7px; 
+}
+
+ h1 , h2{
+	font-size: 300%;
+	padding: 30px;
+	color: white;
+ }
+ 
+  h3{
+	font-size: 300%;
+	padding: 5px;
+	color: white;
+ }
+ 
+ a{
+	 text-decoration:none;
+ }
+ 
+   h4{
+	font-size: 300%;
+	padding: 10px;
+	color: white;
+ }
+  
+  
+ .answer{
+	font-size: 200%;
+	padding: 8px;
+	display: inblock;
+ }
+ 
+ p{
+	font-size: 150%;
+	padding: 10px;
+	display: inblock;
+ }
+ 
+  p2{
+	font-size: 250%;
+	padding: 2px;
+	display: inblock;
+	float: right;
+ }
+ 
+ 
+ body , .black{
+	 background-color: black;
+ }
+
+ form {
+	padding: 3px; 
+ }
+
+ .math{
+	background-color: #0000FF;
+	color: #FAFAFA;
+	min-height: 200px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	float: right;
+	display: inline-block ;
+	text-align: left;
+}  
+
+.math:hover {
+  background-color: #0000A0;
+} 
+
+ .askingmath{
+	background-color: #0000FF;
+	color: #FAFAFA;
+	min-height: 200px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	float: right;
+	display: inline-block ;
+	text-align: left;
+}  
+
+.askingmath:hover {
+  background-color: #0000A0;
+} 
+
+@media only screen and (max-width:600px) {
+  /* For mobile phones: */
+  .akingmath, .english, .math, .health, .stop, .stopasking, .questions, .study {
+    width: 100%;
+  }
+}
+
+.english {
+	background-color: #32CD32;
+	color: #FAFAFA;
+	min-height: 380px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	float: right;
+	display: inline-block ;
+	text-align: left;
+}   
+
+.english:hover {
+  background-color: #228B22;
+} 
+
+.health{
+	background-color: #00BBC7;
+	height: 373px;
+	width: 49%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block ;
+	float: left;
+	text-align: right;
+}
+
+.health:hover {
+  background-color: #035E64;
+}
+  
+.stop{
+	background-color: #FFA500;
+	color: #FAFAFA;
+	min-height: 100px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block ;
+	text-align: left;
+	float: left;
+} 
+
+.stop:hover {
+  background-color: #FF7400;
+}
+
+.stopasking{
+	background-color: #FFA500;
+	color: #FAFAFA;
+	min-height: 100px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block ;
+	text-align: left;
+	float: left;
+} 
+
+.stopasking:hover {
+  background-color: #FF8C00;
+}
+
+
+.study {
+	background-color: #EE3710;
+	color: #FAFAFA;
+	height: 383px;
+	width: 49%;
+	font-family: 'Sniglet', cursive;
+	text-align: right;
+	display: inline-block ;
+	float: left;
+}  
+
+.study:hover {
+  background-color: #B22222;
+}
+
+.studyask {
+	background-color: #EE3710;
+	color: #FAFAFA;
+	height: 360px;
+	width: 49%;
+	font-family: 'Sniglet', cursive;
+	text-align: right;
+	display: inline-block ;
+	float: left;
+}  
+
+.studyask:hover {
+  background-color: #B22222;
+}
+
+.questions{
+	background-color: #ADD8E6;
+	color: #FAFAFA;
+	min-height: 356px;
+	padding:4px;
+	width: 48.3%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block;
+} 
+
+.seerightwrong{
+	background-color: #000000;
+	color: #FAFAFA;
+	width: 100%;
+	padding: 10px;
+	font-family: 'Sniglet', cursive;
+	display: inline-block;
+}
+
+.rightwrong{
+	background-color: #CA0A70;
+	color: #FAFAFA;
+	min-height: 350px;
+	width: 51%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block;
+	float: right;
+} 
+
+input{
+	padding: 5px;
+}
+
+button{
+	border: none;
+}
+
+.button{
+	background-color: black;
+	color: #FAFAFA;
+	height: 30px;
+	width: 100%;
+	font-size: 100%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block ;
+	padding: 0px;
+	
+}
