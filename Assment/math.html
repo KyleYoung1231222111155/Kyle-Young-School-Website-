@@ -24,8 +24,8 @@
 		</section>
 		
 		<aside>
-			<a class="math" onclick="mymath(j++)" id="nextmathquestion">          <!-- right now this is the box that say stop asking question but it dose not work right now -->    
-				<h4>Next Math Questions</h4>
+			<a class="math" onclick ="mymath()" id="nextmathquestion">          <!-- right now this is the box that say stop asking question but it dose not work right now -->    
+				<h4 id="next">Start Questions</h4>
 			</a>
 		</aside>
 		
@@ -37,9 +37,9 @@
 		
 		<section class="questions" id="qmath">
 			<h3>Questions</h3>
-			<p id ="askmath" onclick ="mymath()">Click To Start</p>
+			<p id ="askmath"></p>
 			<input type="text" onfocus="this.value=''" id="textbox">        <!--this is where you click to start asking questions-->
-			<input type="button" value="done" id="enter" onclick="mark()">
+			<input type="button" value="done" id="enter">
 		</section>
 		
 <script>
