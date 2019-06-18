@@ -1,53 +1,63 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<script language="javascript" type="text/javascript" src="java.js"> </script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">								<!--This is the links to everything like the style sheet -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Its Time To Study </title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-	$(document).ready(function(){
-		$(".button").click(function(){
-		$("h1 , h2 , p").toggleClass("black");
-		
-		});
-	});
-</script>
 </head>
 
 <body>
 	<div id="wrapper">
 
-		<button class="study" onclick="studyrestart()" id="study">
-			<a href="index.html">
-				<header>
-					<h1>Study</h1>
-				</header>
+		<header>
+			<a class="studyask" href="index.html">							<!-- this like the home button on websites, this will send you back to the home page, and it is the block that says study -->
+				<h1>Study</h1>
 			</a>
-		</button>
+		</header>
 		
-		<button class="stop" onclick="spoteverthing()" id="stop">
-			<section>
-				<h1>Stop Asking Questions</h1>
-			</section>
-		</button>
+		<section>
+			<a class="stop" id="stop" >									<!-- right now this stops asking questions but it dose not work and I may change it -->
+				<h3 id ="hint" onclick="givehint()">Hint</h3>
+			</a>
+		</section>
 		
-		<button class="math" onclick="nextmathquestion()" id="nextmathquestion">
-			<aside>
-				<h1>Next Math Questions</h1>
-			</aside>
-		</button>
+		<aside>
+			<a class="math" onclick ="mymath()" id="nextmathquestion">          <!-- right now this is the box that say stop asking question but it dose not work right now -->    
+				<h4 id="next">Start Questions</h4>
+			</a>
+		</aside>
+		
+		<section class="rightwrong">
+			
+			<h3 id ="rightanswers">Right Answers</h3>
+			<h3 id ="wronganswers">Wrong Answers</h3>
+		</section>
+		
+		<section class="questions" id="qmath">
+			<h3>Questions</h3>
+			<p id ="askmath"></p>
+			<input type="text" onfocus="this.value=''" id="textbox">        <!--this is where you click to start asking questions-->
+			<input type="button" value="done" onclick ="mark()">
+			<p id="answer" style="color:#ADD8E6;">Answer</p>
+		</section>
+		
+<script>
+<!--var input = document.getElementById("enter");	input.addEventListener("keyup", function(event) { if (event.keyCode === 13) { event.preventDefault();  document.getElementById("enter").click();}}); -->
+<!--this make enter key  work on the keybord but it is not working right now-->
+</script>
+		
+		<!-- <section class="Seerightwrong">
+		<tr>
+			<th><p id = "question">Questions</p></th>
+			<th><p id = "answers">Answers</p></th>
+		</tr>
+		</section> -->
 
-			<section class="health2" id="qmath" onclick = "mymath()">
-				<h2 id ="askmath">Click To Start</h2>
-					<form action="">
-						<input type="text" name="LastName" value="Mouse"><br>
-						<input type="submit" value="Submit">
-					</form>
-			</section>
-		
-		<button class="button" ><footer><p>Black And White</p></footer></button>
+		<!--<footer><a class="button" ><p>Black And White</p></a></footer>-->		<!-- this is the foot I made not work because I was working on some over thens -->
 		
 	</div>
 </body>
+
 

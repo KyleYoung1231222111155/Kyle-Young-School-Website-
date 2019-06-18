@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title> Its Time To Study </title>
 	<script language="javascript" type="text/javascript" src="java.js"> </script>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -8,12 +9,8 @@
 	<script>
 	
 	$(document).ready(function(){
-  $("button").click(function(){
-    $("#div1").fadeOut();
-	
-	$(document).ready(function(){
 		$(".button").click(function(){
-		$("h1 , h2 , p").toggleClass("black");
+		$("div").toggleClass("black");
 		
 		});
 	});
@@ -26,43 +23,38 @@
 	<div id="wrapper">
 
 		<header> 
-			<a href="index.html">
-				<button class="study" onclick="studyrestart()" id="study">
-					<h1>Study</h1>
-				</button>
+			<a href="index.html" class="study">
+				<h1>Study</h1>								<!-- this is the thing that sends you back to the home page -->
 			</a>
 		</header>
 		
 		<section>
-			<button class="stop" id="stop">
-				<h1>Have A Good Time</h1>
-			</button>
+			<a class="stop" id="stop">
+				<h3>Have A Good Time</h3>					<!-- this dose not do anything right now and I may change this like what it say and what it dose-->
+			</a>
 		</section>
 		
 		<aside>
-			<button class="math" id="math"><a href="math.html"> 
-				<h1>Math</h1>
-			</button>
+			<a class="math" href="math.html">				<!-- this link to the math page and it is the block that says math -->
+				<h2>Math</h2>
+			</a>
 		</aside>
 		
 
 		<aside>
-			<button class="english" id="englsih">
-				<a href="english.html"> 
-					<h1>English</h1> 
+				<a class="english" <!--href="english.html"--> 				<!-- this links to the english page but It dose not work the way I want it to, So I made it not work -->
+					<h2>Not Working English</h2> 
 				</a>
-			</button>
 		</aside>
 		
 		<section>
-			<button class="health" id="health">
-				<a href="health.html"> 
-					<h1>Health</h1>
-				</a>
-			</button> 
+			<a class="health" <!--href="health.html"-->							<!-- this links to the health page but It dose not work the way I want it to, So I made it not work -->
+					<h2>Not Working Health</h2>
+			</a> 
 		</section>
 	
-		<button class="button" ><footer><p>Black And White</p></footer></button>
+		<!--<footer><a class="button" ><p>Black And White</p></a></footer>-->
 
 	</div>
+
 </body>

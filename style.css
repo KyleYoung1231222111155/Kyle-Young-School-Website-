@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Sniglet');
 
 #wrapper{
-   max-width: 1040px;
-   margin: 0 auto;
+   max-width: 90%;
+   margin: 10px auto;
    padding: 7px; 
 }
 
  h1 , h2{
 	font-size: 300%;
-	padding: 8px;
+	padding: 30px;
+	color: white;
  }
+ 
+  h3{
+	font-size: 300%;
+	padding: 5px;
+	color: white;
+ }
+ 
+ a{
+	 text-decoration:none;
+ }
+ 
+   h4{
+	font-size: 300%;
+	padding: 10px;
+	color: white;
+ }
+  
   
  .answer{
 	font-size: 200%;
@@ -18,30 +36,31 @@
  }
  
  p{
-	font-size: 100%;
-	padding: 8px;
+	font-size: 150%;
+	padding: 10px;
 	display: inblock;
+ }
+ 
+  p2{
+	font-size: 250%;
+	padding: 2px;
+	display: inblock;
+	float: right;
  }
  
  
  body , .black{
 	 background-color: black;
  }
- 
- a {
-	text-decoration: none;
-    display: block; 
-	color: #FAFAFA;
- }
- 
+
  form {
 	padding: 3px; 
  }
- 
+
  .math{
 	background-color: #0000FF;
 	color: #FAFAFA;
-	height: 200px;
+	min-height: 200px;
 	width: 51%;
 	font-family: 'Sniglet', cursive;
 	float: right;
@@ -56,7 +75,7 @@
  .askingmath{
 	background-color: #0000FF;
 	color: #FAFAFA;
-	height: 200px;
+	min-height: 200px;
 	width: 51%;
 	font-family: 'Sniglet', cursive;
 	float: right;
@@ -68,10 +87,17 @@
   background-color: #0000A0;
 } 
 
-.english , .englishpage{
+@media only screen and (max-width:600px) {
+  /* For mobile phones: */
+  .akingmath, .english, .math, .health, .stop, .stopasking, .questions, .study {
+    width: 100%;
+  }
+}
+
+.english {
 	background-color: #32CD32;
 	color: #FAFAFA;
-	height: 380px;
+	min-height: 380px;
 	width: 51%;
 	font-family: 'Sniglet', cursive;
 	float: right;
@@ -79,14 +105,13 @@
 	text-align: left;
 }   
 
-.english , .englishpage:hover {
+.english:hover {
   background-color: #228B22;
 } 
 
 .health{
-	background-color: #ADD8E6;
-	color: #FAFAFA;
-	height: 380px;
+	background-color: #00BBC7;
+	height: 373px;
 	width: 49%;
 	font-family: 'Sniglet', cursive;
 	display: inline-block ;
@@ -95,13 +120,13 @@
 }
 
 .health:hover {
-  background-color: #00FFFF;
+  background-color: #035E64;
 }
   
 .stop{
 	background-color: #FFA500;
 	color: #FAFAFA;
-	height: 100px;
+	min-height: 100px;
 	width: 51%;
 	font-family: 'Sniglet', cursive;
 	display: inline-block ;
@@ -110,13 +135,13 @@
 } 
 
 .stop:hover {
-  background-color: #FF8C00;
+  background-color: #FF7400;
 }
 
 .stopasking{
 	background-color: #FFA500;
 	color: #FAFAFA;
-	height: 100px;
+	min-height: 100px;
 	width: 51%;
 	font-family: 'Sniglet', cursive;
 	display: inline-block ;
@@ -132,7 +157,7 @@
 .study {
 	background-color: #EE3710;
 	color: #FAFAFA;
-	height: 300px;
+	height: 383px;
 	width: 49%;
 	font-family: 'Sniglet', cursive;
 	text-align: right;
@@ -144,26 +169,53 @@
   background-color: #B22222;
 }
 
-.health2,.askingmathquestions{
-	background-color: #ADD8E6;
+.studyask {
+	background-color: #EE3710;
 	color: #FAFAFA;
-	height: 340px;
-	width: 100%;
+	height: 360px;
+	width: 49%;
 	font-family: 'Sniglet', cursive;
+	text-align: right;
 	display: inline-block ;
-	text-align: left;
+	float: left;
+}  
+
+.studyask:hover {
+  background-color: #B22222;
 }
 
-.healthasking{
-	background-color: #32CD32;
+.questions{
+	background-color: #ADD8E6;
 	color: #FAFAFA;
-	height: 540px;
+	min-height: 356px;
+	padding:4px;
+	width: 48.3%;
+	font-family: 'Sniglet', cursive;
+	display: inline-block;
+} 
+
+.seerightwrong{
+	background-color: #000000;
+	color: #FAFAFA;
+	width: 100%;
+	padding: 10px;
+	font-family: 'Sniglet', cursive;
+	display: inline-block;
+}
+
+.rightwrong{
+	background-color: #CA0A70;
+	color: #FAFAFA;
+	min-height: 350px;
 	width: 51%;
 	font-family: 'Sniglet', cursive;
+	display: inline-block;
 	float: right;
-	display: inline-block ;
-	text-align: left;
-}   
+} 
+
+input{
+	padding: 5px;
+}
 
 button{
 	border: none;
@@ -175,13 +227,8 @@ button{
 	height: 30px;
 	width: 100%;
 	font-size: 100%;
-	font-family: 'Sniglet', cursive;
+	font-family: 'Sniglet', cursive;										/*   */
 	display: inline-block ;
 	padding: 0px;
 	
-}
-
-.question{
-	height: 100px;
-	width: 100px;
 }

@@ -4,11 +4,11 @@
 	<script language="javascript" type="text/javascript" src="java.js"> </script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title> Its Time To Study </title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 	$(document).ready(function(){
 		$(".button").click(function(){
-		$("h1, h2, p").toggleClass("black");
+		$("h1 , h2 , p").toggleClass("black");
 		
 		});
 	});
@@ -18,7 +18,7 @@
 <body>
 	<div id="wrapper">
 
-		<button class="study2" onclick="studyrestart()" id="study">
+		<button class="study" onclick="studyrestart()" id="study">
 			<a href="index.html">
 				<header>
 					<h1>Study</h1>
@@ -28,20 +28,25 @@
 		
 		<button class="stop" onclick="spoteverthing()" id="stop">
 			<section>
-				<h1>Stop Asking Questions</h1>
+				<h3>Stop Asking Questions</h3>
 			</section>
 		</button>
 		
-		<button class="englishpage" onclick="nextenglishquestion()" id="nextenglishquestion">
-			<aside>
+		<aside color="green" >
+			<button class="math" onclick="nextmathquestion()" id="nextmathquestion">
 				<h1>Next English Questions</h1>
-			</aside>
-		</button>
-		
-			<section class="health2">
-				<h1>Questions</h1>
-			</section>
-			
-					<button class="button" ><footer><p>Black And White</p></footer></button>
+			</button>
+		</aside>
 
+			<section class="questions" id="qmath" onclick = "mymath()">
+				<h2 id ="askmath">Click To Start</h2>
+					<form action="">
+						<input type="text" name="LastName" value="Mouse"><br>
+						<input type="submit" value="Submit">
+					</form>
+			</section>
+		
+		<button class="button" ><footer><p>Black And White</p></footer></button>
+		
+	</div>
 </body>
