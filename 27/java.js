@@ -37,18 +37,22 @@ var i = 0;
 
 while(i<10){
 	var type = {questionpart1: "If there is ", questionpart2: " on a plane ", questionpart3: " how many got off."}
+	var type1 = {questionpart1: "A Pride(Group of lions) has ", questionpart2: " And ", questionpart3: " Lions Join How many lions are there"}
+	
+	if (makequestion.questiontype == 0){var change = type}else{var change = type1}
+	if (makequestion.questiontype == 0){var answer = makequestion.randomnumber1-makequestion.randomnumber2}else{var answer = makequestion.randomnumber1+makequestion.randomnumber2}
 	//qList[i] = new Question("2+" + i + "=",2+i);
 	//console.log(qList[i])
-	qList[0] = new Question(type.questionpart1 + makequestion.randomnumber1 + type.questionpart2 + makequestion.randomnumber2 + type.questionpart3, makequestion.randomnumber1-makequestion.randomnumber2,"round up");               //this is the Question bank
+	qList[0] = new Question(change.questionpart1 + makequestion.randomnumber1 + change.questionpart2 + makequestion.randomnumber2 + change.questionpart3,makequestion.randomnumber1-makequestion.randomnumber2,"round up");               //this is the Question bank
 	console.log("qlist2running");
-	qList[1] = new Question("When a grizzly bear hibernates, its heart rate drops to 10 beats per minute, which is 20%, percent of its normal value.    What is a grizzly bear's normal heart rate when not hibernating?","50","there 60 beats per minute");
-	qList[2] = new Question("6 box can hold 36 books what is the ratio book per box","36:6"); 
-	qList[3] = new Question("6 box can hold 36 books what is the rate book per box","6"); 
-	qList[4] = new Question("What is 25% of 908?","227"); 
-	qList[5] = new Question("15+(52)=","-37"); 
-	qList[6] = new Question("77-(62)=","139"); 
-	qList[7] = new Question("Work it Out √36","6");
-	qList[8] = new Question("Work It out √225","15");
+	qList[1] = new Question("skip",answer);
+	qList[2] = new Question("When a grizzly bear hibernates, its heart rate drops to 10 beats per minute, which is 20%, percent of its normal value.    What is a grizzly bear's normal heart rate when not hibernating?","50"); 
+	qList[3] = new Question(change.questionpart1 + makequestion.randomnumber1 + change.questionpart2 + makequestion.randomnumber2 + change.questionpart3,makequestion.randomnumber1-makequestion.randomnumber2,answer); 
+	qList[4] = new Question(change.questionpart1 + makequestion.randomnumber1 + change.questionpart2 + makequestion.randomnumber2 + change.questionpart3,makequestion.randomnumber1-makequestion.randomnumber2,answer); 
+	qList[5] = new Question(change.questionpart1 + makequestion.randomnumber1 + change.questionpart2 + makequestion.randomnumber2 + change.questionpart3,makequestion.randomnumber1-makequestion.randomnumber2,answer); 
+	qList[6] = new Question(change.questionpart1 + makequestion.randomnumber1 + change.questionpart2 + makequestion.randomnumber2 + change.questionpart3,makequestion.randomnumber1-makequestion.randomnumber2,answer); 
+	qList[7] = new Question(change.questionpart1 + makequestion.randomnumber1 + change.questionpart2 + makequestion.randomnumber2 + change.questionpart3,makequestion.randomnumber1-makequestion.randomnumber2,answer);
+	qList[8] = new Question(change.questionpart1 + makequestion.randomnumber1 + change.questionpart2 + makequestion.randomnumber2 + change.questionpart3,makequestion.randomnumber1-makequestion.randomnumber2,answer);
 	qList[9] = new Question("The number of people on a plane was 280. If 40% of the people got off. How many were left?","112");
 	qList[10] = new Question("√225",15);
 	qList[11] = new Question("√225",15);
@@ -56,9 +60,17 @@ while(i<10){
 }
 var j = 0
 function mark() {
+	var makequestion
 	console.log("mark running");
 	console.log(document.getElementById("textbox").value);									//this checks the value of the text and reads it and looks at the answer and see if it is right 
-	qList[j].check(document.getElementById("textbox").value);
+	var str =	document.getElementById("textbox").value;
+	str = str.trim();	
+	console.log(str);														//this checks the value of the text and reads it and looks at the answer and see if it is right 
+	console.log("mark running");
+	console.log(str)
+	str = str.toLowerCase();
+	console.log(str);
+	qList[j].check(str);
 	j++;
 	getquestion(j);
 }
