@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script language="javascript" type="text/javascript" src="java.js"> </script>
+	<link rel="stylesheet" type="text/css" href="style.css">								<!--This is the links to everything like the style sheet -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Its Time To Study </title>
+</head>
+
+<body>
+	<div id="wrapper">
+
+		<header>
+			<a class="studyask" href="index.html">							<!-- this like the home button on websites, this will send you back to the home page, and it is the block that says study -->
+				<h1>Study</h1>
+			</a>
+		</header>
+		
+		<section>
+			<a class="stop" id="stop" >									<!-- right now this stops asking questions but it dose not work and I may change it -->
+				<h3 id ="hint" onclick="givehint">You Got This</h3>
+			</a>
+		</section>
+		
+		<aside>
+			<a class="math" onclick ="getquestion(j++)" id="nextmathquestion">          <!-- right now this is the box that say stop asking question but it dose not work right now -->    
+				<h4 id="next">Start Questions</h4>
+			</a>
+		</aside>
+		
+		<section class="rightwrong">
+			
+			<h3 id ="rightanswers">Right Answers 0</h3>
+			<h3 id ="wronganswers">Wrong Answers 0</h3>
+		</section>
+		
+		<section class="questions" id="qmath">
+			<h3>Questions</h3>
+			<p id ="askmath"></p>
+			<input type="text" onfocus="this.value=''" id="textbox">        <!--this is where you click to start asking questions-->
+			<input type="button" value="done" id="enter" onclick="mark()">
+		</section>
+		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("h3").toggle(
+    function(){$("h3").css({"color": "red"});},
+    function(){$("h3").css({"color": "blue"});},
+	function(){$("h3").css({"color": "white"});},
+    function(){$("h3").css({"color": "green"});
+  });
+});
+</script>
+		
+		<!-- <section class="Seerightwrong">
+		<tr>
+			<th><p id = "question">Questions</p></th>
+			<th><p id = "answers">Answers</p></th>
+		</tr>
+		</section> -->
+
+		<!--<footer><a class="button" ><p>Black And White</p></a></footer>-->		<!-- this is the foot I made not work because I was working on some over thens -->
+		
+	</div>
+</body>
